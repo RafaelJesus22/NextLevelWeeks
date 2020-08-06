@@ -90,11 +90,12 @@ export default class ClassesControler {
   
     } catch(err) {
       await tsx.rollback();
+
+      console.log(err);
       
       return response.status(400).json({
         error: 'Unexpected error while creating new class'
       })
-    }
-  
+    }  
   }
 }
