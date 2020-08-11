@@ -2,12 +2,11 @@ import React, { useState } from 'react';
 
 import PageHeader from '../../components/PageHeader';
 import Input from '../../components/Input';
-
 import warningIcon from '../../assets/images/icons/warning.svg';
-
-import './styles.css';
 import Textarea from '../../components/TextArea';
 import Select from '../../components/Select';
+
+import './styles.css';
 
 
 function Teacherform() {
@@ -19,11 +18,7 @@ function Teacherform() {
   function addNewScheduleItem() {
     setScheduleItems([
       ...scheduleItems,
-      {
-        week_day: 0,
-        from: '',
-        to: ''
-      }
+      { week_day: 0, from: '',  to: ''}
     ]);
   };
 
